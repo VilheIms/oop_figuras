@@ -14,12 +14,12 @@ public class Aplis {
 	}
 	
 	//izveidot metodi riņka līnijas aprēķināšanai
-	public double izvaditRinkaLiniju() {
+	public double rLGarums() {
 		double C = 2*Math.PI*radiuss;
 		return Math.round(C*100.0)/100.0;
 	}
 	//riņķa laukuma apŗēķināšanai
-	public double izvaditRinkaLaukumu() {
+	public double rLaukums() {
 		double s = Math.PI*Math.pow(radiuss, 2);
 		return Math.round(s*100.0)/100.0;
 	}
