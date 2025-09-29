@@ -33,7 +33,7 @@ public class Figuras {
 		*/
 		int izvele, poga;
 		do {
-			izvele = MinkuTante.skaitlaParbaude("Ko vēlies darīt?\n"+"0 - Apturēt\n"+"1 - Izveidot objektu\n"+"2 - Aplūkot objektus"+"3 - Izsaukt metodi", 0, 3);
+			izvele = MinkuTante.skaitlaParbaude("Ko vēlies darīt?\n"+"0 - Apturēt\n"+"1 - Izveidot objektu\n"+"2 - Aplūkot objektus\n"+"3 - Izsaukt metodi", 0, 3);
 			if(izvele == -1){
 				izvele = 0;
 			}
