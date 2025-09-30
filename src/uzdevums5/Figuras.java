@@ -44,6 +44,42 @@ public class Figuras {
 			case 1:
 				OIzveide.izveidotObjektu();
 				break;
+			case 2:
+				poga = JOptionPane.showOptionDialog(null, "Kuras figūras aplūkot?", "Izvēle", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, objektuPogas, objektuPogas[0]);
+				switch(poga) {
+				case 0:
+					if(centraObjekti.size()<1) {
+						JOptionPane.showMessageDialog(null, "Nav neviens centra punkts!", "Brīdinājums", JOptionPane.WARNING_MESSAGE);
+						break;
+					}
+					JOptionPane.showMessageDialog(null, IzveidotieObjekti.izvadit(centraObjekti), "Centra punkti", JOptionPane.PLAIN_MESSAGE);
+					break;
+				case 1:
+					if(cetrsturaObjekti.size()<1) {
+						JOptionPane.showMessageDialog(null, "Nav neviens četrstūris!", "Brīdinājums", JOptionPane.WARNING_MESSAGE);
+						break;
+					}
+					JOptionPane.showMessageDialog(null, IzveidotieObjekti.izvaditC(cetrsturaObjekti), "Centra punkti", JOptionPane.PLAIN_MESSAGE);
+					break;
+				case 2:
+					if(aplaObjekti.size()<1) {
+						JOptionPane.showMessageDialog(null, "Nav neviens aplis!", "Brīdinājums", JOptionPane.WARNING_MESSAGE);
+						break;
+					}
+					JOptionPane.showMessageDialog(null, IzveidotieObjekti.izvaditA(aplaObjekti), "Centra punkti", JOptionPane.PLAIN_MESSAGE);
+					break;
+				case 3:
+					if(trijsturaObjekti.size()<1) {
+						JOptionPane.showMessageDialog(null, "Nav neviens trijstūris!", "Brīdinājums", JOptionPane.WARNING_MESSAGE);
+						break;
+					}
+					JOptionPane.showMessageDialog(null, IzveidotieObjekti.izvaditT(trijsturaObjekti), "Trijstūri", JOptionPane.PLAIN_MESSAGE);
+					break;
+				case 4:
+					JOptionPane.showMessageDialog(null, "Atgriežas uz galveno izvēlni!", "Paziņojums", JOptionPane.INFORMATION_MESSAGE);
+					break;
+				}
+			break;
 			}
 		}while(izvele != 0);
 	}
